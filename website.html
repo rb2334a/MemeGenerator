@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="website.css">
+	<script src="generator.js"></script>
+	<title>Meme Generator</title>
+</head>
+<body>
+	<div class="landing-page">
+		<div class="header">
+			<h1>Meme Generator</h1>
+			<h2>Create your own unique meme!</h2>
+			<hr>
+			<h3>Instructions: Input or copy the link to your favorite picture. Add text to the bottom and/or top of the picture. Be creative! Have Fun! </h3>
+		</div>
+
+		<section class="container">
+			
+			<!--Form to create the meme-->
+			<form id="website-form">
+					
+				<!--Upload image space-->
+				<div class="form-row">
+					<label for="picture-upload" class="form-label">Upload Image from URL:</label>
+				<div class="form-col">
+					<input type="url" class="form-input" id="inputImage" placeholder="Image Goes Here">
+				</div>
+				</div>
+
+				<!--Text Ontop of Image-->
+				<div class="form-row">
+					<label for="text-top" class="form-label">Top Text:</label>
+				<div class="form-col">
+					<input type="text" class="form-input" id="TopText" placeholder="Top text goes here">
+					<br>
+					<input type="range" id="top-text-size" min="0.10" max="0.25" value="0.175" step="0.01" style="margin-left: 205px; margin-top: 20px;">
+				</div>
+				</div>
+
+				<!--Text Bottom of Image-->
+				<div class="form-row">
+					<label for="text-bottom" class="form-label">Bottom Text:</label>
+				<div class="form-col">
+					<input type="text" class="form-input" id="BottomText" placeholder="Bottom text goes here">
+					<br>
+					<input type="range" id="text-size" min="0.10" max="0.25" value="0.175" step="0.01" style="margin-left: 174px; margin-top: 20px;">
+				</div>
+				</div>
+
+				<!--Form to upload own image-->
+				<div class="form-row">
+					<label for="picture-upload2" class="form-label" accept="image/*">Upload Image from Own Files:</label>
+					<input type="file" class="form-input" id="picture-upload2">
+				</div>
+
+				<!--Submit Button-->
+				<div class="button-space">
+					<label class="form-label"></label>
+					<input type="Submit" class="SubmitButton" value="Submit">
+				</div>
+			</form>
+		</section>
+	</div>
+
+	<section>
+		<ul class="memeList">
+
+		</ul>
+	</section>
+	
+	<footer>
+		<div class="footerSection">
+			<p>Keep up the good work! Don't forget to share your meme with your friends!</p>	
+		</div>
+	</footer>
+</body>
+</html>
